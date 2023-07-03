@@ -26,7 +26,7 @@ def sum_and_average(s):
     sum = 0
     digit_count = 0
     for i in range(len(s)):
-      if 47 < ord(s[i]) < 58 : #s[i].isnumeric()
+      if s[i].isnumeric():
         sum += int(s[i])
         digit_count += 1
     average_is = sum/digit_count
